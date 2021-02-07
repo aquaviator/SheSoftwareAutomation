@@ -18,18 +18,17 @@ gem install selenium-webdriver
 gem install geckodriver-helper
 
 If you want to colorize command prompt when running cucumber features, you need to install ANSICON because Windows does not understand ANSI color 
-escape sequences.
+escape sequences. In order to download the latest release of ANSICON, go to https://github.com/adoxa/ansicon/downloads.
 
-In order to download the latest release of ANSICON, go to https://github.com/adoxa/ansicon/downloads.
-Create C:\Ansicon directory and Unzip the download file into it.
-Open a command prompt and navigate to C:\Ansicon folder.
-Navigate to X64 folder if your machine is 64bit otherwise go to X86 folder.
 
+Edit the Feature file and enter the application password in the |password|  field
 
 locate a drive to work from and clone the repository:
 
 
 open: "Start Command Prompt with Ruby" or you can start and search for Ruby
+
+
 
 Navigate to the "Automation-AndyClarke" Folder and run "cucumber --guess features/AndyClarkeTest.feature"
 
