@@ -5,11 +5,11 @@ Given(/^I am on the application homepage$/) do
 expect(page).to have_button('Login')
 end
 
-When(/^I fill in the username field$/) do
- fill_in('username', :with => 'AndyC')
+When(/^I fill in the username field "([^"]*)"$/) do |username|
+ fill_in('username', :with => username)
 end
-When(/^I fill in the password field$/) do
- fill_in('password', :with => '1234!AndyC')
+When(/^I fill in the password field "([^"]*)"$/) do |password|
+ fill_in('password', :with => password)
 end
 
 When(/^I click the login button$/) do
